@@ -3,16 +3,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Portfolio du photographe Nina Carducci">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="preload" href="./assets/style.css" as="style" onload="this.rel='stylesheet'">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
 	<title>Nina Carducci</title>
 </head>
 <body>
@@ -55,6 +51,7 @@
 									./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1920.webp 1920w" 
 							class="d-block w-100" 
 							alt="Public joyeux et bruyant"
+							loading="lazy"
 						>
 					</div>
 					<div class="carousel-item">
@@ -64,6 +61,7 @@
 									./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash_1920.webp 1920w" 
 							class="d-block w-100" 
 							alt="Baiser d'un couple marié"
+							loading="lazy"
 						>
 					</div>
 				</div>
@@ -90,31 +88,14 @@
 			</div>
 		</article>
 
-
-
-
-		<!-- <div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_575.webp" alt="Concert avec gens dansant les mains en l'air"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_575.webp" alt="Jeune homme en costume"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_575.webp" alt="Damme souriante dans un bureau"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_575.webp" alt="Homme et Femme se donnant les mains"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_575.webp" alt="Homme éblouit par la lumière"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_575.webp" alt="Couple de jeune marié"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_575.webp" alt="Portrait d'un jeune fille à lunettes"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_575.webp" alt="Artiste avec micro et une main en l'air"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_575.webp" alt="Damme souriante derrière un ordinateur"/>
-		</div> -->
-
-
-
-
 		<article id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<section class="container py-3">
 				<div class="gallery" style="display: none">
 					<img 
 						data-gallery-tag="Concert" 
-						class="gallery-item" 
+						class="gallery-item"
+						loading="lazy" 
 						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_1090.webp" 
 						srcset="
 							./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_254.webp 254w,
@@ -124,10 +105,11 @@
 							./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_848.webp 848w,
 							./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash_1090.webp 1090w"
 						alt="Concert avec gens dansant les mains en l'air"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 					<img 
 						data-gallery-tag="Entreprises" 
-						class="gallery-item" 
+						class="gallery-item"
+						loading="lazy" 
 						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_1090.webp" 
 						srcset="
 							./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_254.webp 254w,
@@ -137,10 +119,11 @@
 							./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_848.webp 848w,
 							./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash_1090.webp 1090w"
 						alt="Jeune homme en costume"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 					<img 
 						data-gallery-tag="Entreprises" 
 						class="gallery-item" 
+						loading="lazy" 
 						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_1090.webp" 
 						srcset="
 							./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_254.webp 254w,
@@ -150,10 +133,11 @@
 							./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_848.webp 848w,
 							./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash_1090.webp 1090w"
 						alt="Damme souriante dans un bureau"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 					<img 
 						data-gallery-tag="Mariages" 
 						class="gallery-item" 
+						loading="lazy" 
 						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_1090.webp"
 						srcset="
 							./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_254.webp 254w,
@@ -163,10 +147,11 @@
 							./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_848.webp 848w,
 							./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash_1090.webp 1090w" 
 						alt="Homme et Femme se donnant les mains"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 					<img 
 						data-gallery-tag="Portrait" 
 						class="gallery-item" 
+						loading="lazy" 
 						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_1090.webp"
 						srcset="
 							./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_254.webp 254w,
@@ -176,10 +161,11 @@
 							./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_848.webp 848w,
 							./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash_1090.webp 1090w" 
 						alt="Homme éblouit par la lumière"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 					<img 
 						data-gallery-tag="Mariages" 
 						class="gallery-item" 
+						loading="lazy" 
 						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_1090.webp"
 						srcset="
 							./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_254.webp 254w,
@@ -189,10 +175,11 @@
 							./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_848.webp 848w,
 							./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_1090.webp 1090w" 
 						alt="Couple de jeune marié"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 					<img 
 						data-gallery-tag="Portrait" 
 						class="gallery-item" 
+						loading="lazy" 
 						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_1090.webp"
 						srcset="
 							./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_254.webp 254w,
@@ -202,10 +189,11 @@
 							./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_848.webp 848w,
 							./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash_1090.webp 1090w" 
 						alt="Portrait d'un jeune fille à lunettes"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 					<img 
 						data-gallery-tag="Concert" 
 						class="gallery-item" 
+						loading="lazy" 
 						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_1090.webp"
 						srcset="
 							./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_254.webp 254w,
@@ -215,10 +203,11 @@
 							./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_848.webp 848w,
 							./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash_1090.webp 1090w" 
 						alt="Artiste avec micro et une main en l'air"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 					<img 
 						data-gallery-tag="Entreprises" 
 						class="gallery-item" 
+						loading="lazy" 
 						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_1090.webp" 
 						srcset="
 							./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_254.webp 254w,
@@ -228,7 +217,7 @@
 							./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_848.webp 848w,
 							./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash_1090.webp 1090w"
 						alt="Damme souriante derrière un ordinateur"
-						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"/>
+						sizes="(min-width: 1400px) 440px, (min-width: 1200px) 380px, (min-width: 1000px) 320px, (min-width: 780px) 240px, (min-width: 580px) 270px, calc(100vw - 16px)"/>
 				</div>
 			</section>
 			<section class="quote">
@@ -303,9 +292,16 @@
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera_448.webp" alt="Appareil photo">
+				<img 
+					src="./assets/images/camera_448.webp" 
+					loading="lazy"
+					alt="Appareil photo">
 			</div>
 		</div>
 	</footer>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.min.js"></script>
+	<script src="./assets/scripts.js"></script>
 </body>
 </html>
