@@ -2,14 +2,14 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Portfolio du photographe Nina Carducci">
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="preload" href="./assets/style.css" as="style" onload="this.rel='stylesheet'">
+	<link rel="preload" as="style" href="./assets/bootstrap/bootstrap.min.css" onload="this.rel='stylesheet'">
+	<link rel="preload" as="style" href="./assets/style.min.css" onload="this.rel='stylesheet'">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
 	<title>Nina Carducci</title>
+	<meta name="description" content="Portfolio du photographe Nina Carducci">
 </head>
 <body>
 
@@ -21,7 +21,15 @@
 				<li><a href="#gallery">Galerie</a></li>
 				<li><a href="#services">Service</a></li>
 				<li><a href="#contact">Contact</a></li>
-				<li><a href="https://www.instagram.com/ninacarducci.photo/?hl=fr" class="social-link" target="_blank"><img src="assets/images/instagram.png" alt="Logo instagram"></a></li>
+				<li><a href="https://www.instagram.com/ninacarducci.photo/?hl=fr" class="social-link" target="_blank">
+						<img 
+							src="assets/images/instagram.png" 
+							alt="Logo instagram" 
+							width="20px"
+							height="20px" 
+						>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -78,7 +86,13 @@
 
 		<article id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina_560.webp" alt="Portrait de Nina Carducci" />
+				<img 
+					src="./assets/images/nina_560.webp" 
+					alt="Portrait de Nina Carducci" 
+					loading="lazy" 
+					width="400px"
+					height="400px" 
+				/>
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -294,8 +308,11 @@
 			<div class="picture right">
 				<img 
 					src="./assets/images/camera_448.webp" 
-					loading="lazy"
-					alt="Appareil photo">
+					alt="Appareil photo"
+					loading="lazy" 
+					width="400px"
+					height="400px" 
+				>
 			</div>
 		</div>
 	</footer>
