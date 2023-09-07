@@ -3,6 +3,15 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
+
+	<!-- StyleSheets & Fonts -->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" media="all and (max-width: 1000px)" href="./assets/media-query-1000px.css">
+	<link rel="stylesheet" media="all and (max-width: 650px)" href="./assets/media-query-650px.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" onload="this.rel='stylesheet'">
 	
 	<!-- Twitter summary card -->
 	<meta name="twitter:card" content="summary" />
@@ -28,13 +37,6 @@
 	<meta property="og:url" content="https://gieltie.github.io/09--nina-carducci/" />
 	<meta property="og:site_name" content="NinaCarducci.fr" />
 	
-	<!-- StyleSheets & Fonts -->
-	<link rel="preload" as="style" href="./assets/bootstrap/bootstrap.min.css" onload="this.rel='stylesheet'">
-	<link rel="preload" as="style" href="./assets/style.css" onload="this.rel='stylesheet'">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" onload="this.rel='stylesheet'">
-
 	<title>Nina Carducci</title>
 	<meta name="description" content="Photographe professionnelle, Nina Carducci à Bordeaux, vous propose de capturer ces merveilleux moments de la vie à travers de son regard, son approche, sa technique.">
 	<link rel="canonical" href="https://gieltie.github.io/09--nina-carducci/">
@@ -140,12 +142,25 @@
 		<article id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<section class="container py-3">
+
 				<div class="gallery" style="display: none">
+					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/aaron-paul_575.webp" alt="Salle de concert avec gens dansant les mains en l'air">
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/ali-morshedlou_448.webp" alt="Homme en costume sombre, les bras croisées, avec un léger sourire.">
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/jason-goodman_608.webp" alt="Au deuxième plan, une femme assise, le regard porté vers la gauche et souriante.">
+					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/hannah-busing_608.webp" alt="Gros-plan sur les mains de deux personnes, s'effleurant les doigts.">
+					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/ade-tunji_448.webp" alt="Plan serré sur un homme fermant les yeux.">
+					<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/jakob-owens_448.webp" alt="Un couple de jeunes mariés heureux se tenant par le bras avec des palmiers en arrière-plan.">
+					<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/nino-van-prattenburg_575h.webp" alt="Une femme portant des lunettes touchant un grillage au premier-plan.">
+					<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/austin-neill_608.webp" alt="Un chanteur sur une scène levant un bras en l'air avec des effets pyrotechniques.">
+					<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/mateus-campos-felipe_608.webp" alt="Une femme assise à son bureau, riant et regardant vers la droite.">
+				</div>
+
+				<!-- <div class="gallery" style="display: none">
 					<img 
 						class="gallery-item"
 						data-gallery-tag="Concert" 
 						loading="lazy" 
-						alt="Concert avec gens dansant les mains en l'air"
+						alt="Salle de concert avec gens dansant les mains en l'air"
 						src="./assets/images/gallery/concerts/aaron-paul_1090.webp" 
 						srcset="
 							./assets/images/gallery/concerts/aaron-paul_224.webp 224w,
@@ -267,7 +282,8 @@
 							./assets/images/gallery/entreprise/mateus-campos-felipe_1090.webp 1090w"
 						sizes="(min-width: 1400px) 424px, (min-width: 1200px) 364px, (min-width: 1000px) 304px, (min-width: 780px) 224px, (min-width: 580px) 254px, calc(100vw - 16px)"	
 					/>
-				</div>
+				</div> -->
+
 			</section>
 			<section class="quote">
 				<figure>
@@ -353,7 +369,7 @@
 			</div>
 		</div>
 	</footer>
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
