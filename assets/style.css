@@ -40,7 +40,7 @@ body {
 
 .social-link img {
 	width: 20px;
-	height: auto;
+	height: 20px;
 }
 
 .carousel-item img {
@@ -221,6 +221,12 @@ body {
 	flex : 2;
 
 }
+
+.pictureCamera {
+	width: 419px;
+	height: 419px;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
